@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prodotto scalare"/>
+        <attribute name="authors" value="diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 09:31:42 "/>
+        <attribute name="created" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTIyOyIwOToxMzo1MSAiOzIyMjk="/>
+        <attribute name="edited" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTIyOyIwOTozMTo0MiAiOzE7MjMzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista1, lista2" type="Integer" array="True" size="3"/>
+            <declare name="i, risultato" type="Integer" array="False" size=""/>
+            <assign variable="risultato" expression="0"/>
+            <output expression="&quot;dammi le componenti dei due vettori&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista1[i]"/>
+                <input variable="lista2[i]"/>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="risultato" expression="risultato+lista1[i]*lista2[i]"/>
+            </for>
+            <output expression="&quot;il risultato del prodotto scalare &#232;: &quot;" newline="True"/>
+            <output expression="risultato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

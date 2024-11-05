@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vettore pari e dispari"/>
+        <attribute name="authors" value="diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 09:37:05 "/>
+        <attribute name="created" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTE4OyIwOToyMjoyMyAiOzIyMzM="/>
+        <attribute name="edited" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTE4OyIwOTozNzowNSAiOzE7MjM0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista" type="Integer" array="True" size="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;dammi tre numeri&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista[i]"/>
+                <output expression="lista[i]" newline="True"/>
+                <if expression="lista[i]%2=0">
+                    <then>
+                        <output expression="&quot;l'elemento &#232; negro&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;l'elemento &#232; bianco&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

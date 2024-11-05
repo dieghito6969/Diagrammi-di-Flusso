@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="controllo numero pari o dispari"/>
+        <attribute name="authors" value="diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 09:19:07 "/>
+        <attribute name="created" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTE4OyIwOTowMzoxOCAiOzIyMzY="/>
+        <attribute name="edited" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTE4OyIwOToxOTowNyAiOzE7MjM0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;ciao sei solo dammi un numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero&gt;0">
+                <then>
+                    <output expression="&quot;il numero &#232; maggiore di zero&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero==0">
+                        <then>
+                            <output expression="&quot;il numero &#232; zero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;il numero &#232; minore di zero&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="abs(numero)%2=0">
+                <then>
+                    <output expression="&quot;il numero &#232; pari&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;il numero &#232; dispari&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

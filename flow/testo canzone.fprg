@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="testo canzone"/>
+        <attribute name="authors" value="diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 09:45:32 "/>
+        <attribute name="created" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTIyOyIwOTozMzoxMyAiOzIyMjk="/>
+        <attribute name="edited" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTIyOyIwOTo0NTozMiAiOzE7MjM0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="scelta, canzone1, canzone2" type="String" array="False" size=""/>
+            <assign variable="canzone1" expression="&quot;Chiara dice che mi adora Dice che non vedeva l'ora Ti piace uomo oppure donna? Non ti devi sentire in colpa, seh&quot;"/>
+            <assign variable="canzone2" expression="&quot;Forever, yeahCan you hear meYeahForever,yeahOh,yeah,glory,glory, glory, Glory, glory, glory, glory It feels good to be home&quot;"/>
+            <output expression="&quot;ciao dammi la canzone di cui vuoi il testo&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <if expression="scelta=&quot;chiara&quot;">
+                <then>
+                    <output expression="canzone1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="scelta==&quot;donda&quot;">
+                        <then>
+                            <output expression="canzone2" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bohhh"/>
+        <attribute name="authors" value="diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 08:56:10 "/>
+        <attribute name="created" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTIyOyIwODo0MDozNyAiOzIyMzI="/>
+        <attribute name="edited" value="ZGllZ287Q1I3U0lVTTsyMDI0LTEwLTIyOyIwODo1NjoxMCAiOzE7MjMzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, i, risultato" type="Integer" array="False" size=""/>
+            <assign variable="risultato" expression="1"/>
+            <output expression="&quot;dammi il numero del quale vuoi il fattoriale&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="risultato" expression="risultato*i"/>
+            </for>
+            <output expression="&quot;il fattoriale del numero desiderato &#232;: &quot;" newline="True"/>
+            <output expression="risultato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
